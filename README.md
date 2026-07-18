@@ -68,3 +68,80 @@ A diferencia de un reloj superpuesto tradicional, Look Clock permite jugar con l
     </td>
   </tr>
 </table>
+
+<br>
+
+<br>
+
+## 🖼️ Galería de Resultados (Looks)
+
+Una pequeña muestra de lo que se puede llegar a crear combinando las herramientas de profundidad, fuentes y efectos de renderizado.
+
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_0.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_1.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_2.jpeg" width="95%">
+    </td>
+  </tr>
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_3.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_4.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_5.jpeg" width="95%">
+    </td>
+  </tr>
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_6.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_7.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_8.jpeg" width="95%">
+    </td>
+  </tr>
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_9.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_10.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_11.jpeg" width="95%">
+    </td>
+  </tr>
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_12.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_13.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_14.jpeg" width="95%">
+    </td>
+  </tr>
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_15.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_16.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_17.jpeg" width="95%">
+    </td>
+  </tr>
+</table>
