@@ -144,4 +144,15 @@ Una pequeña muestra de lo que se puede llegar a crear combinando las herramient
       <img src="asset/images/galeria_17.jpeg" width="95%">
     </td>
   </tr>
+  <tr>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_18.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_19.jpeg" width="95%">
+    </td>
+    <td width="33.3%" align="center" valign="top">
+      <img src="asset/images/galeria_20.jpeg" width="95%">
+    </td>
+  </tr>
 </table>
