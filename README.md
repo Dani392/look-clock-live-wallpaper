@@ -26,44 +26,31 @@ An advanced Live Wallpaper creator for Android built with Flutter. It allows use
 
 Unlike a traditional overlaid clock, Look Clock allows you to play with environmental refraction and interactive light through its editing engine.
 
-<table width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <b>🌊 Dynamic Immersion Effect</b>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <b>✨ Advanced Typographic Engine</b>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" align="center">
-      <p align="center"><i>Mathematical canvas cropping and waterline opacity to simulate sinking and refraction.</i></p>
-      <img src="asset/videos/efecto_inmersion.gif" width="90%">
-    </td>
-    <td valign="top" align="center">
-      <p align="center"><i>Native rendering with interactive shaders for Glassmorphism and Neon effects.</i></p>
-      <img src="asset/videos/motor_tipografico.gif" width="90%">
-    </td>
-  </tr>
-</table>
-<br>
+### 🌊 Dynamic Immersion Effect & ✨ Advanced Typographic Engine
+Mathematical canvas cropping and waterline opacity to simulate sinking and refraction, combined with native rendering for Glassmorphism and Neon effects.
 
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" align="center" valign="top">
-      <b>⛰️ Layer & Z-Index Engine</b>
+      <img src="asset/videos/efecto_inmersion.gif" width="90%">
     </td>
     <td width="50%" align="center" valign="top">
-      <b>🖌️ Precision Eraser</b>
+      <img src="asset/videos/motor_tipografico.gif" width="90%">
     </td>
   </tr>
+</table>
+
+<br>
+
+### ⛰️ Layer & Z-Index Engine & 🖌️ Precision Eraser
+Management of overlapping planes via interactive cuts, alongside free-canvas editing with stroke interpolation for millimetric mask adjustments.
+
+<table width="100%" cellspacing="0" cellpadding="0">
   <tr>
-    <td valign="top" align="center">
-      <p align="center"><i>Management of overlapping planes (foreground and background) via interactive cuts and opacities to interleave the clock into the scene.</i></p>
+    <td width="50%" align="center" valign="top">
       <img src="asset/videos/profundidad_de_campo.gif" width="90%">
     </td>
-    <td valign="top" align="center">
-      <p align="center"><i>Free-canvas editing with stroke interpolation support for millimetric mask adjustments.</i></p>
+    <td width="50%" align="center" valign="top">
       <img src="asset/videos/goma_interactiva.gif" width="90%">
     </td>
   </tr>
