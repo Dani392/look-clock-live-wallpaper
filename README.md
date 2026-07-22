@@ -51,7 +51,7 @@ A diferencia de un reloj superpuesto tradicional, Look Clock permite jugar con l
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" align="center" valign="top">
-      <b>⛰️ Profundidad de Campo (Máscara Inteligente)</b>
+      <b>⛰️Separación de Capas (Canvas Split)</b>
     </td>
     <td width="50%" align="center" valign="top">
       <b>🖌️ Goma de Borrar de Precisión</b>
@@ -59,7 +59,7 @@ A diferencia de un reloj superpuesto tradicional, Look Clock permite jugar con l
   </tr>
   <tr>
     <td valign="top" align="center">
-      <p align="center"><i>Algoritmo de escaneo de píxeles (flood-fill) para detectar el cielo y ocultar el reloj tras el paisaje.</i></p>
+      <p align="center"><i>Divide la imagen de fondo en paneles independientes (frontal y trasero) mediante cortes interactivos para intercalar el reloj y crear un efecto de profundidad.</i></p>
       <img src="asset/videos/profundidad_de_campo.gif" width="90%">
     </td>
     <td valign="top" align="center">
