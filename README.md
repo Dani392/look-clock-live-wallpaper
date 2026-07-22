@@ -1,47 +1,47 @@
 # Look Clock ⌚🏔️
 
-Un avanzado creador de fondos de pantalla animados (Live Wallpapers) para Android construido con Flutter. Permite a los usuarios diseñar, editar y aplicar relojes altamente personalizados que interactúan dinámicamente con el entorno de sus fotografías.
+An advanced Live Wallpaper creator for Android built with Flutter. It allows users to design, edit, and apply highly customized clocks that interact dynamically with the environment of their photographs.
 
-## 🚀 Resumen
+## 🚀 Overview
 
-**Look Clock** va un paso más allá de la simple personalización de texto. Es un editor visual completo que integra procesamiento de imágenes en el dispositivo para lograr efectos de profundidad reales (Z-Index). A través de algoritmos de detección de color y herramientas de enmascaramiento interactivo, los usuarios pueden colocar el reloj *detrás* de elementos del paisaje (como montañas o edificios) o sumergirlo bajo efectos de agua dinámicos.
+**Look Clock** goes a step beyond simple text customization. It is a complete visual editor that integrates on-device image processing to achieve true depth effects (Z-Index). Through color detection algorithms and interactive masking tools, users can place the clock *behind* landscape elements (such as mountains or buildings) or submerge it under dynamic water effects.
 
-## ✨ Características Principales
+## ✨ Key Features
 
-* **🎨 Motor Tipográfico Avanzado:** Soporte para estiramiento de fuentes (X/Y), desenfoque tipo *Glassmorphism*, brillos de neón interactivos, contornos y sombras paramétricas.
-* **⛰️ Máscaras de Profundidad Inteligentes:** Generación automática de máscaras PNG a partir de la imagen base. Utiliza un algoritmo de escaneo de píxeles (*flood-fill*) que evalúa la luminosidad y tolerancia de color para detectar cielos y separar el fondo del paisaje.
-* **🖌️ Goma de Borrar de Precisión:** Herramienta interactiva de edición en lienzo libre. Permite borrar partes específicas del reloj con soporte de interpolación de trazos y un sistema completo de Deshacer/Rehacer.
-* **🌊 Motor de Efectos Ambientales:** Integración de capa de agua con recortes horizontales matemáticos, opacidad de líneas de flotación y mezcla de reflejos.
-* **🔗 Ecosistema de Exportación:** Guarda configuraciones complejas localmente o compártelas externamente. Genera esquemas JSON comprimidos mediante `zlib` que se pueden importar mediante archivos o *Deep Links* (`lookclock://import`).
+* **🎨 Advanced Typographic Engine:** Support for font stretching (X/Y), *Glassmorphism* blur, interactive neon glows, contours, and parametric shadows.
+* **⛰️ Depth Masks (Z-Index):** Automatic generation of alpha-channel masks from the base image, allowing precise layering behind landscape elements.
+* **🖌️ Precision Eraser:** Interactive free-canvas editing tool. Allows erasing specific parts of the clock with stroke interpolation support and a complete Undo/Redo system.
+* **🌊 Environmental Effects Engine:** Integration of a water layer with mathematical horizontal cuts, waterline opacity, and reflection blending.
+* **🔗 Export Ecosystem:** Save complex configurations locally or share them externally. Generates compressed JSON schemes via `zlib` that can be imported via files or *Deep Links* (`lookclock://import`).
 
-## 🛠️ Stack Tecnológico y Flujo de Desarrollo
+## 🛠️ Tech Stack & Development Flow
 
-* **Framework:** Flutter (Dart) con puente nativo `MethodChannel` para la implementación del servicio Live Wallpaper en Android.
-* **Procesamiento de Imágenes:** Paquete `image` para la decodificación de bytes en bruto, generación de máscaras alfa e interpolación de recortes.
-* **Gestión de Estado:** Sistema reactivo apoyado en el ciclo de vida del *SchedulerBinding* y una pila de instantáneas (`_EditorSnapshot`) circular para gestionar el historial de Deshacer/Rehacer.
-* **Almacenamiento Local:** `shared_preferences` para configuraciones de interfaz ligeras y retención de proyectos "Look".
-* **Gestión de Archivos y Compartición:** Manipulación profunda de archivos mediante `path_provider`, combinada con compresión Base64+Zlib para el sistema de Deep Linking a través de `share_plus`.
+* **Framework:** Flutter (Dart) with a native `MethodChannel` for implementing the Live Wallpaper service in Android.
+* **Image Processing:** `image` package for raw byte decoding, alpha mask generation, and crop interpolation.
+* **State Management:** Reactive system supported by the *SchedulerBinding* lifecycle and a circular snapshot stack (`_EditorSnapshot`) to handle the Undo/Redo history.
+* **Local Storage:** `shared_preferences` for lightweight UI configurations and retention of "Look" projects.
+* **File Management & Sharing:** Deep file manipulation via `path_provider`, combined with Base64+Zlib compression for Deep Linking through `share_plus`.
 
-## 📱 Escaparate de la App e Interfaz de Edición
+## 📱 App Showcase & Editing Interface
 
-A diferencia de un reloj superpuesto tradicional, Look Clock permite jugar con la refracción del entorno y la luz interactiva a través de su motor de edición.
+Unlike a traditional overlaid clock, Look Clock allows you to play with environmental refraction and interactive light through its editing engine.
 
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" align="center" valign="top">
-      <b>🌊 Efecto Inmersión Dinámico</b>
+      <b>🌊 Dynamic Immersion Effect</b>
     </td>
     <td width="50%" align="center" valign="top">
-      <b>✨ Motor Tipográfico Avanzado</b>
+      <b>✨ Advanced Typographic Engine</b>
     </td>
   </tr>
   <tr>
     <td valign="top" align="center">
-      <p align="center"><i>Corte matemático del lienzo y opacidad de línea de flotación para simular hundimiento y refracción.</i></p>
+      <p align="center"><i>Mathematical canvas cropping and waterline opacity to simulate sinking and refraction.</i></p>
       <img src="asset/videos/efecto_inmersion.gif" width="90%">
     </td>
     <td valign="top" align="center">
-      <p align="center"><i>Renderizado nativo con shaders interactivos para efectos de Cristal (Glassmorphism) y Neón.</i></p>
+      <p align="center"><i>Native rendering with interactive shaders for Glassmorphism and Neon effects.</i></p>
       <img src="asset/videos/motor_tipografico.gif" width="90%">
     </td>
   </tr>
@@ -51,19 +51,19 @@ A diferencia de un reloj superpuesto tradicional, Look Clock permite jugar con l
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" align="center" valign="top">
-      <b>⛰️Separación de Capas (Canvas Split)</b>
+      <b>⛰️ Layer & Z-Index Engine</b>
     </td>
     <td width="50%" align="center" valign="top">
-      <b>🖌️ Goma de Borrar de Precisión</b>
+      <b>🖌️ Precision Eraser</b>
     </td>
   </tr>
   <tr>
     <td valign="top" align="center">
-      <p align="center"><i>Divide la imagen de fondo en paneles independientes (frontal y trasero) mediante cortes interactivos para intercalar el reloj y crear un efecto de profundidad.</i></p>
+      <p align="center"><i>Management of overlapping planes (foreground and background) via interactive cuts and opacities to interleave the clock into the scene.</i></p>
       <img src="asset/videos/profundidad_de_campo.gif" width="90%">
     </td>
     <td valign="top" align="center">
-      <p align="center"><i>Edición en lienzo libre con soporte de interpolación de trazos para ajustes de máscara milimétricos.</i></p>
+      <p align="center"><i>Free-canvas editing with stroke interpolation support for millimetric mask adjustments.</i></p>
       <img src="asset/videos/goma_interactiva.gif" width="90%">
     </td>
   </tr>
@@ -73,9 +73,9 @@ A diferencia de un reloj superpuesto tradicional, Look Clock permite jugar con l
 
 <br>
 
-## 🖼️ Galería de Resultados (Looks)
+## 🖼️ Results Gallery (Looks)
 
-Una pequeña muestra de lo que se puede llegar a crear combinando las herramientas de profundidad, fuentes y efectos de renderizado.
+A small sample of what can be created by combining depth tools, fonts, and rendering effects.
 
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
